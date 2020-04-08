@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>logo.png" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      * {
+        background-color: white;
+      }
+      .loader-start {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        animation: roll 3s infinite;
+        /* transform: rotate(30deg); */
+        
+      }
+      .loader-start img {
+        width: 200px;
+        height: 150px;
+      }
+      @keyframes roll {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
-    <div id="app"></div>
+    <div id="app" v-cloak>
+      <span class="loader-start"> <img src="./logo.png" alt="logo"/></span>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
