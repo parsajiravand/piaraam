@@ -1,0 +1,46 @@
+.home {
+  background-color: black;
+}
+
+#p-nav {
+  padding-bottom: 40px;
+}
+
+#p-nav .p-nav {
+  position: fixed;
+}
+
+#p-nav .p-nav .p-logo img {
+  width: 100px;
+  height: 60px;
+}
+
+#p-about {
+  padding-top: 40px;
+}
+
+.p-songs {
+  margin-top: 2000px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-image: url(../img/federica-giusti-C8hpCrbWMqA-unsplash.jpg);
+}
+
+body a,
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: white;
+}
+/*# sourceMappingURL=app.css.map */

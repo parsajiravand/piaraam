@@ -1,0 +1,12 @@
+#p-nav {
+  padding-bottom: 40px;
+}
+
+#p-nav .p-nav {
+  position: fixed;
+}
+
+#p-nav .p-nav .p-logo img {
+  width: 100px;
+  height: 60px;
+}

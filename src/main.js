@@ -3,11 +3,14 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+import Scrollspy from "vue2-scrollspy";
 
 // Install BootstrapVue
 Vue.use(BootstrapVue);
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin);
+// use default options
+Vue.use(Scrollspy);
 
 Vue.config.productionTip = false;
 setTimeout(function() {
@@ -16,4 +19,4 @@ setTimeout(function() {
     store,
     render: (h) => h(App),
   }).$mount("#app");
-}, 5000);
+}, 1000);
