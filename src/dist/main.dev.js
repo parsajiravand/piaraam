@@ -8,20 +8,29 @@ var _router = _interopRequireDefault(require("./router"));
 
 var _store = _interopRequireDefault(require("./store"));
 
-var _bootstrapVue = require("bootstrap-vue");
+var _fontawesomeSvgCore = require("@fortawesome/fontawesome-svg-core");
 
-var _vue2Scrollspy = _interopRequireDefault(require("vue2-scrollspy"));
+var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
+
+var _vueFontawesome = require("@fortawesome/vue-fontawesome");
+
+var _vueScrollProgressBar = _interopRequireDefault(require("@guillaumebriday/vue-scroll-progress-bar"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-// Install BootstrapVue
-_vue["default"].use(_bootstrapVue.BootstrapVue); // Optionally install the BootstrapVue icon components plugin
+_fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faUserSecret);
 
+_vue["default"].component("font-awesome-icon", _vueFontawesome.FontAwesomeIcon);
 
-_vue["default"].use(_bootstrapVue.IconsPlugin); // use default options
+_vue["default"].config.productionTip = false;
 
+var VueScrollTo = require("vue-scrollto");
 
-_vue["default"].use(_vue2Scrollspy["default"]);
+_vue["default"].use(VueScrollTo);
+
+_vue["default"].use(_vueScrollProgressBar["default"]);
+
+_vue["default"].use(VueScrollTo);
 
 _vue["default"].config.productionTip = false;
 setTimeout(function () {

@@ -7,21 +7,30 @@ import Songs from "../components/Songs.vue";
 Vue.use(VueRouter);
 
 const routes = new VueRouter({
-  path: "/home",
-  name: "Home",
-  component: Home,
-  children: [
+  routes: [
     {
-      path: "/about",
-      name: "About",
-      component: About,
+      path: "/home",
+      name: "Home",
+      component: Home,
+      children: [
+        {
+          path: "/about",
+          name: "About",
+          component: About,
+        },
+        {
+          path: "/songs",
+          name: "Songs",
+          component: Songs,
+        },
+      ],
     },
     {
-      path: "/songs",
-      name: "Songs",
-      component: Songs,
+      path: "*",
+      redirect: "/home",
     },
   ],
+
   scrollBehavior: function(to) {
     if (to.hash) {
       return { selector: to.hash };
@@ -29,7 +38,6 @@ const routes = new VueRouter({
       return { x: 0, y: 0 };
     }
   },
-  base: process.env.BASE_URL,
   mode: "history",
 });
 

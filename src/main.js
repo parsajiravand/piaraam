@@ -2,21 +2,26 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
-import Scrollspy from "vue2-scrollspy";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import VueScrollProgressBar from "@guillaumebriday/vue-scroll-progress-bar";
 
-// Install BootstrapVue
-Vue.use(BootstrapVue);
-// Optionally install the BootstrapVue icon components plugin
-Vue.use(IconsPlugin);
-// use default options
-Vue.use(Scrollspy);
+library.add(faUserSecret);
 
+Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.config.productionTip = false;
+
+var VueScrollTo = require("vue-scrollto");
+
+Vue.use(VueScrollTo);
+Vue.use(VueScrollProgressBar);
+Vue.use(VueScrollTo);
 Vue.config.productionTip = false;
 setTimeout(function() {
   new Vue({
     router,
     store,
-    render: (h) => h(App),
+    render: h => h(App)
   }).$mount("#app");
 }, 1000);

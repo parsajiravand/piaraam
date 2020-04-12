@@ -20,17 +20,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 _vue["default"].use(_vueRouter["default"]);
 
 var routes = new _vueRouter["default"]({
-  path: "/home",
-  name: "Home",
-  component: _Home["default"],
-  children: [{
-    path: "/about",
-    name: "About",
-    component: _About["default"]
+  routes: [{
+    path: "/home",
+    name: "Home",
+    component: _Home["default"],
+    children: [{
+      path: "/about",
+      name: "About",
+      component: _About["default"]
+    }, {
+      path: "/songs",
+      name: "Songs",
+      component: _Songs["default"]
+    }]
   }, {
-    path: "/songs",
-    name: "Songs",
-    component: _Songs["default"]
+    path: "*",
+    redirect: "/home"
   }],
   scrollBehavior: function scrollBehavior(to) {
     if (to.hash) {
@@ -44,7 +49,6 @@ var routes = new _vueRouter["default"]({
       };
     }
   },
-  base: process.env.BASE_URL,
   mode: "history"
 });
 /* const router = new VueRouter({
