@@ -13,7 +13,7 @@ var _Home = _interopRequireDefault(require("../views/Home.vue"));
 
 var _About = _interopRequireDefault(require("../components/About.vue"));
 
-var _Songs = _interopRequireDefault(require("../components/Songs.vue"));
+var _Youtube = _interopRequireDefault(require("../components/Youtube.vue"));
 
 var _Login = _interopRequireDefault(require("../components/admin/Login.vue"));
 
@@ -33,9 +33,9 @@ var routes = new _vueRouter["default"]({
       name: "About",
       component: _About["default"]
     }, {
-      path: "/songs",
-      name: "Songs",
-      component: _Songs["default"]
+      path: "/Youtube",
+      name: "Youtube",
+      component: _Youtube["default"]
     }]
   }, {
     path: "/login",

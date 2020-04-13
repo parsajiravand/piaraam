@@ -1,29 +1,30 @@
 <template>
   <div class="home">
-    <!--   <AppLogin />
-    <Login />-->
     <Nav />
     <About />
-    <Songs />
+    <Youtube />
+    <SoundCloud />
+    <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-/* import AppLogin from "@/components/admin/AppLogin";
-import Login from "@/components/admin/Login"; */
+
 import Nav from "@/components/Nav";
 import About from "@/components/About";
-import Songs from "@/components/Songs";
+import Youtube from "@/components/Youtube";
+import SoundCloud from "@/components/SoundCloud";
+import Footer from "@/components/Footer";
 
 export default {
   name: "Home",
   components: {
-    /*    AppLogin,
-    Login, */
     Nav,
     About,
-    Songs
+    Youtube,
+    SoundCloud,
+    Footer
   }
 };
 </script>

@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../components/About.vue";
-import Songs from "../components/Songs.vue";
+import Youtube from "../components/Youtube.vue";
 import Login from "../components/admin/Login.vue";
 import Secure from "../components/admin/Secure.vue";
 
@@ -21,9 +21,9 @@ const routes = new VueRouter({
           component: About
         },
         {
-          path: "/songs",
-          name: "Songs",
-          component: Songs
+          path: "/Youtube",
+          name: "Youtube",
+          component: Youtube
         }
       ]
     },

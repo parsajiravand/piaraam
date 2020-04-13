@@ -27,6 +27,18 @@
   color: white !important;
 }
 
+#p-nav .p-nav .p-nav-social {
+  /* Its BootStap Class  */
+}
+
+#p-nav .p-nav .p-nav-social .nav-link:hover,
+#p-nav .p-nav .p-nav-social .nav-link:focus {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
 #p-nav .p-nav .p-nav-social svg:hover {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -112,10 +124,102 @@
   height: 600px;
 }
 
+@media only screen and (max-width: 991px) {
+  #p-songs .p-songs .p-youtube {
+    height: 420px;
+  }
+}
+
+#p-soundcloud .p-soundcloud-text {
+  margin: 150px auto 50px;
+}
+
+#p-soundcloud .p-soundcloud .owl-theme .owl-dots .owl-dot.active span,
+#p-soundcloud .p-soundcloud .owl-theme .owl-dots .owl-dot:hover span {
+  background: #cc4400;
+}
+
+#p-soundcloud .p-soundcloud .owl-theme .owl-dots .owl-dot span {
+  background: white;
+}
+
+#p-footer {
+  margin-top: 100px;
+}
+
+#p-footer .p-nav-social {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  /* Its BootStap Class  */
+}
+
+#p-footer .p-nav-social .nav-link:hover,
+#p-footer .p-nav-social .nav-link:focus {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: 0.7s all ease-in-out;
+  transition: 0.7s all ease-in-out;
+}
+
+#p-footer .p-nav-social li {
+  margin: 8px;
+}
+
+#p-footer .p-nav-social svg:hover {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+#p-footer .p-nav-social .instagram:hover {
+  color: #d400ff;
+}
+
+#p-footer .p-nav-social .telegram:hover {
+  color: #00aeff;
+}
+
+#p-footer .p-nav-social .facebook:hover {
+  color: #0077ff;
+}
+
+#p-footer .p-nav-social .youtube:hover {
+  color: #ff0000;
+}
+
+#p-footer .p-nav-social .soundcloud:hover {
+  color: #ff9900;
+}
+
+#p-footer .p-nav-social .linkedin:hover {
+  color: #0043fd;
+}
+
+#p-footer .p-gmail {
+  margin: 20px auto;
+}
+
+#p-footer .p-gmail a {
+  -webkit-transition: 0.7s all ease-in-out;
+  transition: 0.7s all ease-in-out;
+}
+
+#p-footer .p-copyright {
+  margin-top: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+body {
+  /* Edit RowClass In BootStrap */
 }
 
 body a,
@@ -127,5 +231,11 @@ body h4,
 body h5,
 body h6 {
   color: white;
+}
+
+@media only screen and (max-width: 991px) {
+  body .row {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=app.css.map */

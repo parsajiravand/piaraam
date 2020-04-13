@@ -2,6 +2,8 @@
 @import "./navbar";
 @import "./about";
 @import "./songs";
+@import "./soundcloud";
+@import "./footer";
 * {
   margin: 0;
   padding: 0;
@@ -17,5 +19,11 @@ body {
   h5,
   h6 {
     color: white;
+  }
+  /* Edit RowClass In BootStrap */
+  @media only screen and (max-width: 991px) {
+    .row {
+      margin: 0;
+    }
   }
 }

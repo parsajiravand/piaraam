@@ -1,0 +1,12 @@
+#p-soundcloud .p-soundcloud-text {
+  margin: 150px auto 50px;
+}
+
+#p-soundcloud .p-soundcloud .owl-theme .owl-dots .owl-dot.active span,
+#p-soundcloud .p-soundcloud .owl-theme .owl-dots .owl-dot:hover span {
+  background: #cc4400;
+}
+
+#p-soundcloud .p-soundcloud .owl-theme .owl-dots .owl-dot span {
+  background: white;
+}

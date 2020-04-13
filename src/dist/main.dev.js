@@ -8,17 +8,11 @@ var _router = _interopRequireDefault(require("./router"));
 
 var _store = _interopRequireDefault(require("./store"));
 
-var _fontawesomeSvgCore = require("@fortawesome/fontawesome-svg-core");
-
-var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
-
 var _vueFontawesome = require("@fortawesome/vue-fontawesome");
 
 var _vueScrollProgressBar = _interopRequireDefault(require("@guillaumebriday/vue-scroll-progress-bar"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-_fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faUserSecret);
 
 _vue["default"].component("font-awesome-icon", _vueFontawesome.FontAwesomeIcon);
 

@@ -20,6 +20,12 @@
       color: rgba(255, 255, 255, 1) !important;
     }
     .p-nav-social {
+      /* Its BootStap Class  */
+      .nav-link:hover,
+      .nav-link:focus {
+        transform: scale(1.7);
+        transition: 0.5s all ease-in-out;
+      }
       svg {
         &:hover {
           transition: 0.3s all ease-in-out;

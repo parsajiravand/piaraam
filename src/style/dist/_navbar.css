@@ -22,6 +22,16 @@
   color: white !important;
 }
 
+#p-nav .p-nav .p-nav-social {
+  /* Its BootStap Class  */
+}
+
+#p-nav .p-nav .p-nav-social .nav-link:hover,
+#p-nav .p-nav .p-nav-social .nav-link:focus {
+  transform: scale(1.7);
+  transition: 0.5s all ease-in-out;
+}
+
 #p-nav .p-nav .p-nav-social svg:hover {
   transition: 0.3s all ease-in-out;
 }
