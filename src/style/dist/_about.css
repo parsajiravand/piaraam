@@ -1,3 +1,11 @@
 #p-about {
-  padding-top: 40px;
+  margin: 100px auto;
+}
+
+#p-about .p-about-title {
+  margin-bottom: 50px;
+}
+
+#p-about .text {
+  margin-top: 20px;
 }

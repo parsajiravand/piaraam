@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-      <Home />
+    <router-view></router-view>
   </div>
 </template>
 <script>
-import Home from "./views/Home";
+/* import Home from "./views/Home"; */
 export default {
-  components: {
+  /* components: {
     Home
-  }
+  } */
 };
 </script>
 <style lang="scss">

@@ -15,13 +15,17 @@ var _About = _interopRequireDefault(require("../components/About.vue"));
 
 var _Songs = _interopRequireDefault(require("../components/Songs.vue"));
 
+var _Login = _interopRequireDefault(require("../components/admin/Login.vue"));
+
+var _Secure = _interopRequireDefault(require("../components/admin/Secure.vue"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 _vue["default"].use(_vueRouter["default"]);
 
 var routes = new _vueRouter["default"]({
   routes: [{
-    path: "/home",
+    path: "/",
     name: "Home",
     component: _Home["default"],
     children: [{
@@ -33,6 +37,14 @@ var routes = new _vueRouter["default"]({
       name: "Songs",
       component: _Songs["default"]
     }]
+  }, {
+    path: "/login",
+    name: "login",
+    component: _Login["default"]
+  }, {
+    path: "/secure",
+    name: "secure",
+    component: _Secure["default"]
   }, {
     path: "*",
     redirect: "/home"

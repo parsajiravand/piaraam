@@ -88,11 +88,28 @@
 }
 
 #p-about {
-  padding-top: 40px;
+  margin: 100px auto;
 }
 
-.p-songs {
-  margin-top: 2000px;
+#p-about .p-about-title {
+  margin-bottom: 50px;
+}
+
+#p-about .text {
+  margin-top: 20px;
+}
+
+#p-songs .p-songs {
+  margin: 150px auto;
+}
+
+#p-songs .p-songs .p-youtube-title {
+  margin-bottom: 50px;
+}
+
+#p-songs .p-songs .p-youtube {
+  width: 100%;
+  height: 600px;
 }
 
 * {

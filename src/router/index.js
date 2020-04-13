@@ -3,32 +3,44 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../components/About.vue";
 import Songs from "../components/Songs.vue";
+import Login from "../components/admin/Login.vue";
+import Secure from "../components/admin/Secure.vue";
 
 Vue.use(VueRouter);
 
 const routes = new VueRouter({
   routes: [
     {
-      path: "/home",
+      path: "/",
       name: "Home",
       component: Home,
       children: [
         {
           path: "/about",
           name: "About",
-          component: About,
+          component: About
         },
         {
           path: "/songs",
           name: "Songs",
-          component: Songs,
-        },
-      ],
+          component: Songs
+        }
+      ]
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: Login
+    },
+    {
+      path: "/secure",
+      name: "secure",
+      component: Secure
     },
     {
       path: "*",
-      redirect: "/home",
-    },
+      redirect: "/home"
+    }
   ],
 
   scrollBehavior: function(to) {
@@ -38,7 +50,7 @@ const routes = new VueRouter({
       return { x: 0, y: 0 };
     }
   },
-  mode: "history",
+  mode: "history"
 });
 
 /* const router = new VueRouter({
