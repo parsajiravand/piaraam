@@ -63,6 +63,7 @@
 @media only screen and (max-width: 991px) {
   #p-nav .p-nav .navbar-logo {
     margin-top: 0px;
+    margin-left: -20px;
   }
   #p-nav .p-nav .menu-btn {
     float: right;

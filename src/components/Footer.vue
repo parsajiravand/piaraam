@@ -79,11 +79,11 @@
         <div class="row p-gmail justify-content-center" style="color:white">
           <a href="https://pedramjiravand@gmail.com" class="nav-link">
             <font-awesome-icon icon="envelope" size="3x" />
-            <strong style="margin:-10px"> PedramJiravand@gmail.com</strong>
+            <strong style="margin:-10px"> PedramJiravand@Gmail.com</strong>
           </a>
         </div>
         <div class="row p-copyright justify-content-center">
-          <hr />
+          <hr style="border-width:1px;border-color:white;max-width:100px" />
           <h6>
             © PIARAAM 2020 | Created By
 

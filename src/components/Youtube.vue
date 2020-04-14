@@ -8,6 +8,9 @@
       <div class="p-youtube-title text-center">
         <h2>Featured Video</h2>
         <h5>{{ you.title }}</h5>
+        <hr
+          style="max-width:50px;border-width:3px;border-color:#ff0000;margin:30px auto"
+        />
       </div>
       <iframe
         :src="you.link"
@@ -33,12 +36,12 @@ export default {
       .get()
       .then(snapshot => {
         snapshot.forEach(doc => {
-          console.log(doc.data(), doc.id);
           let youtube = doc.data();
           youtube.id = doc.id;
           this.youtube.push(youtube);
         });
-      });
+      })
+      .catch(err => console.log(err));
   }
 };
 </script>
