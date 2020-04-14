@@ -6,23 +6,24 @@
         style="max-width:50px;border-width:3px;border-color:#cc4400;margin:30px auto"
       />
     </div>
-    <div class="p-soundcloud container">
+    <div
+      class="p-soundcloud container"
+      v-for="sound in soundcloud"
+      :key="sound.id"
+    >
       <carousel
         :responsive="{ 0: { items: 1 }, 720: { items: 2 }, 1200: { items: 3 } }"
         :autoplay="true"
         :margin="15"
         :nav="false"
       >
-        <img src="https://placeimg.com/200/200/any?1" />
-
-        <img src="https://placeimg.com/200/200/any?2" />
         <iframe
           width="100%"
           height="400px"
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?visual=true&amp;url=https%3A//api.soundcloud.com/tracks/704525203&amp;show_artwork=false&amp;maxwidth=1200&amp;maxheight=1000&amp;dnt=1&amp;auto_play=false&amp;buying=false&amp;liking=true&amp;download=false&amp;sharing=true&amp;show_comments=true&amp;show_playcount=false&amp;show_user=false&amp;color=54595"
+          :src="sound.link1"
         ></iframe>
         <iframe
           width="100%"
@@ -30,7 +31,7 @@
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?visual=true&amp;url=https%3A//api.soundcloud.com/tracks/259022682&amp;show_artwork=false&amp;maxwidth=1200&amp;maxheight=1000&amp;dnt=1&amp;auto_play=false&amp;buying=false&amp;liking=true&amp;download=false&amp;sharing=true&amp;show_comments=true&amp;show_playcount=false&amp;show_user=false&amp;color=54595"
+          :src="sound.link2"
         ></iframe>
         <iframe
           width="100%"
@@ -38,7 +39,7 @@
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?visual=true&amp;url=https%3A//api.soundcloud.com/tracks/259022682&amp;show_artwork=false&amp;maxwidth=1200&amp;maxheight=1000&amp;dnt=1&amp;auto_play=false&amp;buying=false&amp;liking=true&amp;download=false&amp;sharing=true&amp;show_comments=true&amp;show_playcount=false&amp;show_user=false&amp;color=54595"
+          :src="sound.link3"
         ></iframe>
         <iframe
           width="100%"
@@ -46,19 +47,90 @@
           scrolling="no"
           frameborder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?visual=true&amp;url=https%3A//api.soundcloud.com/tracks/259022682&amp;show_artwork=false&amp;maxwidth=1200&amp;maxheight=1000&amp;dnt=1&amp;auto_play=false&amp;buying=false&amp;liking=true&amp;download=false&amp;sharing=true&amp;show_comments=true&amp;show_playcount=false&amp;show_user=false&amp;color=54595"
+          :src="sound.link4"
         ></iframe>
+        <iframe
+          width="100%"
+          height="400px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          :src="sound.link5"
+        ></iframe>
+        <iframe
+          width="100%"
+          height="400px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          :src="sound.link6"
+        ></iframe>
+        <iframe
+          width="100%"
+          height="400px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          :src="sound.link7"
+        ></iframe>
+        <iframe
+          width="100%"
+          height="400px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          :src="sound.link8"
+        ></iframe>
+        <iframe
+          width="100%"
+          height="400px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          :src="sound.link9"
+        ></iframe>
+        <iframe
+          width="100%"
+          height="400px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          :src="sound.link10"
+        ></iframe>
+        <!--       <iframe
+          width="100%"
+          height="400px"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          :src="sound.link"
+        ></iframe> -->
       </carousel>
     </div>
   </div>
 </template>
 <script>
+import db from "@/firebase/init.js";
+
 import carousel from "vue-owl-carousel";
 export default {
   data() {
     return {
-      api: { enchantment: 704525203 }
+      soundcloud: []
     };
+  },
+  created() {
+    //fetch data from fire store
+    db.collection("soundcloud")
+      .get()
+      .then(snapshot => {
+        snapshot.forEach(doc => {
+          console.log(doc.data().mozik1, doc.id);
+          let soundcloud = doc.data();
+          soundcloud.id = doc.id;
+          this.soundcloud.push(soundcloud);
+        });
+      });
   },
   components: { carousel }
 };

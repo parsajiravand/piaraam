@@ -11,14 +11,6 @@ var _vueRouter = _interopRequireDefault(require("vue-router"));
 
 var _Home = _interopRequireDefault(require("../views/Home.vue"));
 
-var _About = _interopRequireDefault(require("../components/About.vue"));
-
-var _Youtube = _interopRequireDefault(require("../components/Youtube.vue"));
-
-var _Login = _interopRequireDefault(require("../components/admin/Login.vue"));
-
-var _Secure = _interopRequireDefault(require("../components/admin/Secure.vue"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 _vue["default"].use(_vueRouter["default"]);
@@ -27,24 +19,7 @@ var routes = new _vueRouter["default"]({
   routes: [{
     path: "/",
     name: "Home",
-    component: _Home["default"],
-    children: [{
-      path: "/about",
-      name: "About",
-      component: _About["default"]
-    }, {
-      path: "/Youtube",
-      name: "Youtube",
-      component: _Youtube["default"]
-    }]
-  }, {
-    path: "/login",
-    name: "login",
-    component: _Login["default"]
-  }, {
-    path: "/secure",
-    name: "secure",
-    component: _Secure["default"]
+    component: _Home["default"]
   }, {
     path: "*",
     redirect: "/home"

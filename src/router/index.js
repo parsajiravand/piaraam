@@ -1,10 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../components/About.vue";
-import Youtube from "../components/Youtube.vue";
-import Login from "../components/admin/Login.vue";
-import Secure from "../components/admin/Secure.vue";
 
 Vue.use(VueRouter);
 
@@ -13,30 +9,9 @@ const routes = new VueRouter({
     {
       path: "/",
       name: "Home",
-      component: Home,
-      children: [
-        {
-          path: "/about",
-          name: "About",
-          component: About
-        },
-        {
-          path: "/Youtube",
-          name: "Youtube",
-          component: Youtube
-        }
-      ]
+      component: Home
     },
-    {
-      path: "/login",
-      name: "login",
-      component: Login
-    },
-    {
-      path: "/secure",
-      name: "secure",
-      component: Secure
-    },
+
     {
       path: "*",
       redirect: "/home"

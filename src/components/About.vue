@@ -11,7 +11,7 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-5 col-md-6">
-            <img src="../img/about.jpg" alt="piaraam" class="img-fluid" />
+            <img src="../img/about1.jpg" alt="piaraam" class="img-fluid" />
           </div>
           <div class="col-lg-5 col-md-12">
             <p class="text">
