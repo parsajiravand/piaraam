@@ -16,6 +16,7 @@
     "bootstrap-vue": "^2.11.0",
     "core-js": "^3.6.4",
     "firebase": "^7.14.0",
+    "jquery": "^3.5.0",
     "vue": "^2.6.11",
     "vue-owl-carousel": "^2.0.3",
     "vue-router": "^3.1.6",
@@ -53,8 +54,9 @@
     "rules": {}
   },
   "browserslist": [
+    "defaults",
     "> 1%",
     "last 2 versions",
-    "not dead"
+    "Chrome > 41"
   ]
 }
