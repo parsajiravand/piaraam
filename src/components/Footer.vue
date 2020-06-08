@@ -78,8 +78,12 @@
         </div>
         <div class="row p-gmail justify-content-center" style="color:white">
           <a href="https://pedramjiravand@gmail.com" class="nav-link">
-            <font-awesome-icon icon="envelope" size="3x" />
-            <strong style="margin:-10px"> PedramJiravand@Gmail.com</strong>
+            <font-awesome-icon
+              icon="envelope"
+              size="3x"
+              style="padding-top:5px"
+            />
+            <strong> PedramJiravand@Gmail.com</strong>
           </a>
         </div>
         <div class="row p-copyright justify-content-center">

@@ -9,7 +9,14 @@
   padding: 0;
   border: 0;
 }
+@font-face {
+  font-family: montserrat;
+
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+
 body {
+  font-family: "montserrat" !important;
   a,
   p,
   h1,

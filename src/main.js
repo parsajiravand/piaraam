@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import $ from "jquery";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import VueScrollProgressBar from "@guillaumebriday/vue-scroll-progress-bar";
 
@@ -18,6 +19,7 @@ setTimeout(function() {
   new Vue({
     router,
     store,
-    render: h => h(App)
+    $,
+    render: (h) => h(App),
   }).$mount("#app");
-}, 5000);
+}, 1);

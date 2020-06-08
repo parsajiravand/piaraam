@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div>
         <vue-scroll-progress-bar
-          height=".2rem"
+          height=".3rem"
           backgroundColor="linear-gradient(to right, #000225, #ffffff)"
         />
       </div>

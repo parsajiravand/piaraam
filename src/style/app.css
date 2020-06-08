@@ -112,8 +112,30 @@
   margin-top: 20px;
 }
 
-#p-songs .p-songs {
-  margin: 150px auto;
+#p-songs {
+  margin: -50px auto 100px;
+}
+
+#p-songs .p-error {
+  padding: 20px;
+}
+
+#p-songs .p-error h5 {
+  color: red;
+}
+
+#p-songs .alert {
+  visibility: hidden;
+  direction: rtl;
+}
+
+#p-songs .alert p {
+  color: black;
+}
+
+#p-songs .alert .close-understand .close {
+  float: none;
+  padding: 10px;
 }
 
 #p-songs .p-songs .p-youtube-title {
@@ -219,7 +241,13 @@
   border: 0;
 }
 
+@font-face {
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+
 body {
+  font-family: "montserrat" !important;
   /* Edit RowClass In BootStrap */
 }
 

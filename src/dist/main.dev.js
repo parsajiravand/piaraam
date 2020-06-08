@@ -8,6 +8,8 @@ var _router = _interopRequireDefault(require("./router"));
 
 var _store = _interopRequireDefault(require("./store"));
 
+var _jquery = _interopRequireDefault(require("jquery"));
+
 var _vueFontawesome = require("@fortawesome/vue-fontawesome");
 
 var _vueScrollProgressBar = _interopRequireDefault(require("@guillaumebriday/vue-scroll-progress-bar"));
@@ -31,8 +33,9 @@ setTimeout(function () {
   new _vue["default"]({
     router: _router["default"],
     store: _store["default"],
+    $: _jquery["default"],
     render: function render(h) {
       return h(_App["default"]);
     }
   }).$mount("#app");
-}, 5000);
+}, 1);
