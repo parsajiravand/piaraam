@@ -53,13 +53,13 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
         class="p-youtube"
+        alt="piaraam video pedramjiravand youtube composer moving iranian_composer"
       ></iframe>
     </div>
   </div>
 </template>
 <script>
 import db from "@/firebase/init.js";
-import $ from "jquery";
 export default {
   data() {
     return {
@@ -85,13 +85,12 @@ export default {
       let youtubeRes = document.getElementById("p-youtube");
       if (youtubeRes === null) {
         //add JQuery  For Alert
-        $(".alert").css("visibility", "visible");
-        $(".alert").addClass("fixed-top");
-        //error In The Section :)))
-        $(".p-error").removeClass("d-none");
+        document.querySelector(".alert").style.visibility = "visible";
+        document.querySelector(".alert").classList.add("fixed-top");
+        document.querySelector(".p-error").classList.remove("d-none");
       } else {
         //Connectin To FireStore Is True
-        $(".alert").css("visibility", "hidden");
+        document.querySelector(".alert").style.visibility = "hidden";
       }
     }, 3000);
   },

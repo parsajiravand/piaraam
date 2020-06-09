@@ -11,7 +11,11 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-5 col-md-6">
-            <img src="../img/about1.jpg" alt="piaraam" class="img-fluid" />
+            <img
+              src="../img/about1.jpg"
+              alt="piaraam pedramjiravand profile composer iraniancomposer"
+              class="img-fluid"
+            />
           </div>
           <div class="col-lg-5 col-md-12">
             <p class="text">
@@ -23,6 +27,22 @@
               Then try to record different songs as well as record the music of
               different movies. And I currently live in Istanbul
             </p>
+            <li>
+              <font-awesome-icon icon="trophy" style="color:gold" />
+              <span> live concert in Azadi Tower in Tehran 2017</span>
+            </li>
+            <li>
+              <font-awesome-icon icon="trophy" style="color:gold" />
+              Best music film in Kadoma film festival in Japan
+            </li>
+            <li>
+              <font-awesome-icon icon="trophy" style="color:gold" />Fiance best
+              music in one film one country in France 2019
+            </li>
+            <li>
+              <font-awesome-icon icon="trophy" style="color:gold" /> Performed
+              at the opening of Fajr International Film Festival in Tehran 2017
+            </li>
           </div>
         </div>
       </div>
@@ -31,8 +51,11 @@
 </template>
 
 <script>
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
+library.add(faTrophy);
 export default {
-  name: "about"
+  name: "about",
 };
 </script>
 

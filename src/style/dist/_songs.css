@@ -4,6 +4,7 @@
 
 #p-songs .p-error {
   padding: 20px;
+  direction: rtl;
 }
 
 #p-songs .p-error h5 {

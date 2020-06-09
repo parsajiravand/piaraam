@@ -38,4 +38,4 @@ setTimeout(function () {
       return h(_App["default"]);
     }
   }).$mount("#app");
-}, 1);
+}, 3000);

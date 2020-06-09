@@ -9,3 +9,14 @@
 #p-about .text {
   margin-top: 20px;
 }
+
+#p-about li {
+  color: white;
+  list-style: none;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+#p-about li svg {
+  margin-left: -20px;
+}
