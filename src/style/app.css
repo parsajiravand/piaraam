@@ -112,12 +112,24 @@
   margin-top: 20px;
 }
 
+#p-about li {
+  color: white;
+  list-style: none;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+#p-about li svg {
+  margin-left: -20px;
+}
+
 #p-songs {
   margin: -50px auto 100px;
 }
 
 #p-songs .p-error {
   padding: 20px;
+  direction: rtl;
 }
 
 #p-songs .p-error h5 {

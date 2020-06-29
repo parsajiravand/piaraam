@@ -17,7 +17,7 @@
             >
               <img
                 src="../img/logo-white.png"
-                alt="piaraam"
+                alt="piaraam pedramjiravand logo composer"
                 class="navbar-logo"
               />
             </router-link>
@@ -83,6 +83,7 @@
                     <a
                       href="https://www.instagram.com/piaraam/?hl=en"
                       class="nav-link"
+                      target="_blank"
                     >
                       <font-awesome-icon
                         :icon="['fab', 'instagram']"
@@ -92,7 +93,11 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="https://t.me/piaraammusic" class="nav-link">
+                    <a
+                      href="https://t.me/piaraammusic"
+                      class="nav-link"
+                      target="_blank"
+                    >
                       <font-awesome-icon
                         :icon="['fab', 'telegram']"
                         size="2x"
@@ -104,6 +109,7 @@
                     <a
                       href="https://www.facebook.com/109902080559959?referrer=whatsapp"
                       class="nav-link"
+                      target="_blank"
                     >
                       <font-awesome-icon
                         :icon="['fab', 'facebook']"
@@ -116,6 +122,7 @@
                     <a
                       href="https://www.youtube.com/channel/UC4YQW0iWo9T43bpVZ5bq5Yg"
                       class="nav-link"
+                      target="_blank"
                     >
                       <font-awesome-icon
                         :icon="['fab', 'youtube']"
@@ -128,6 +135,7 @@
                     <a
                       href="https://soundcloud.com/pedram-jiravand"
                       class="nav-link"
+                      target="_blank"
                     >
                       <font-awesome-icon
                         :icon="['fab', 'soundcloud']"
@@ -140,6 +148,7 @@
                     <a
                       href="https://www.linkedin.com/in/pedram-jiravand-piaraam-37a912175"
                       class="nav-link"
+                      target="_blank"
                     >
                       <font-awesome-icon
                         :icon="['fab', 'linkedin']"
@@ -169,7 +178,7 @@ import {
   faYoutube,
   faSoundcloud,
   faLinkedin,
-  faYahoo
+  faYahoo,
 } from "@fortawesome/free-brands-svg-icons";
 library.add(
   faInstagram,
@@ -183,7 +192,7 @@ library.add(
 export default {
   data() {
     return {};
-  }
+  },
 };
 </script>
 <style lang="scss">

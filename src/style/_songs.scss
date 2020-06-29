@@ -1,8 +1,9 @@
 #p-songs {
   margin: -50px auto 100px;
-  .p-error{
+  .p-error {
     padding: 20px;
-    h5{
+    direction: rtl;
+    h5 {
       color: red;
     }
   }
@@ -18,7 +19,6 @@
         float: none;
         padding: 10px;
       }
-     
     }
   }
   .p-songs {

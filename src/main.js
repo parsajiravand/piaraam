@@ -2,18 +2,13 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import $ from "jquery";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import VueScrollProgressBar from "@guillaumebriday/vue-scroll-progress-bar";
-
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.config.productionTip = false;
-
 var VueScrollTo = require("vue-scrollto");
-
 Vue.use(VueScrollTo);
 Vue.use(VueScrollProgressBar);
-Vue.use(VueScrollTo);
 Vue.config.productionTip = false;
 setTimeout(function() {
   new Vue({
@@ -22,4 +17,4 @@ setTimeout(function() {
     $,
     render: (h) => h(App),
   }).$mount("#app");
-}, 1);
+}, 3000);

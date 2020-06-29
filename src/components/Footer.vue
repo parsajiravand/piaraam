@@ -12,6 +12,7 @@
               <a
                 href="https://www.instagram.com/piaraam/?hl=en"
                 class="nav-link"
+                target="_blank"
               >
                 <font-awesome-icon
                   :icon="['fab', 'instagram']"
@@ -21,7 +22,11 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://t.me/piaraammusic" class="nav-link">
+              <a
+                href="https://t.me/piaraammusic"
+                class="nav-link"
+                target="_blank"
+              >
                 <font-awesome-icon
                   :icon="['fab', 'telegram']"
                   size="2x"
@@ -33,6 +38,7 @@
               <a
                 href="https://www.facebook.com/109902080559959?referrer=whatsapp"
                 class="nav-link"
+                target="_blank"
               >
                 <font-awesome-icon
                   :icon="['fab', 'facebook']"
@@ -45,6 +51,7 @@
               <a
                 href="https://www.youtube.com/channel/UC4YQW0iWo9T43bpVZ5bq5Yg"
                 class="nav-link"
+                target="_blank"
               >
                 <font-awesome-icon
                   :icon="['fab', 'youtube']"
@@ -54,7 +61,11 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://soundcloud.com/pedram-jiravand" class="nav-link">
+              <a
+                href="https://soundcloud.com/pedram-jiravand"
+                class="nav-link"
+                target="_blank"
+              >
                 <font-awesome-icon
                   :icon="['fab', 'soundcloud']"
                   size="2x"
@@ -66,6 +77,7 @@
               <a
                 href="https://www.linkedin.com/in/pedram-jiravand-piaraam-37a912175"
                 class="nav-link"
+                target="_blank"
               >
                 <font-awesome-icon
                   :icon="['fab', 'linkedin']"
@@ -77,7 +89,11 @@
           </ul>
         </div>
         <div class="row p-gmail justify-content-center" style="color:white">
-          <a href="https://pedramjiravand@gmail.com" class="nav-link">
+          <a
+            href="https://pedramjiravand@gmail.com"
+            class="nav-link"
+            target="_blank"
+          >
             <font-awesome-icon
               icon="envelope"
               size="3x"
