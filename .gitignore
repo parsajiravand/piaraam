@@ -3,6 +3,7 @@ node_modules
 /firebase
 /dist
 admin
+auth
 
 
 

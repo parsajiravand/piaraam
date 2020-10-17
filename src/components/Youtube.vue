@@ -92,7 +92,7 @@ export default {
         //Connectin To FireStore Is True
         document.querySelector(".alert").style.visibility = "hidden";
       }
-    }, 3000);
+    }, 5000);
   },
 };
 </script>

@@ -1,0 +1,22 @@
+{
+  "short_name": "Piaraam",
+  "name": "Piaraam",
+  "description": "Music Without Border",
+  "icons": [
+    {
+      "src": "/image/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/image/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000225",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000225"
+}

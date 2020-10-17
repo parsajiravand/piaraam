@@ -90,7 +90,7 @@
         </div>
         <div class="row p-gmail justify-content-center" style="color:white">
           <a
-            href="https://pedramjiravand@gmail.com"
+            href="mailto:https://pedramjiravand@gmail.com"
             class="nav-link"
             target="_blank"
           >
