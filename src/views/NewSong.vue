@@ -1,7 +1,8 @@
 <template>
   <div class="newSong">
     <Nav />
-    <NewSong />
+
+    <NewSongComponent />
     <Footer />
   </div>
 </template>
@@ -10,20 +11,20 @@
 // @ is an alias to /src
 
 import Nav from "@/components/Nav";
-import NewSong from "@/components/newsong/NewSongComponent"
+import NewSongComponent from "@/components/newsong/NewSongComponent";
 import Footer from "@/components/Footer";
 
 export default {
   name: "NewSong",
   components: {
     Nav,
-    NewSong,
-    Footer
-  }
+    NewSongComponent,
+    Footer,
+  },
 };
 </script>
 <style lang="scss">
-    .newSong{
-    background-color: #000225;
+.newSong {
+  background-color: #000225;
 }
 </style>

@@ -26,7 +26,7 @@ const routes = new VueRouter({
       component: Login,
     },
     {
-      path: "/Admin",
+      path: "/admin",
       name: "Admin",
       component: Admin,
     },

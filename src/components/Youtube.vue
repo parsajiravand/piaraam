@@ -1,12 +1,11 @@
 <template>
   <div id="p-songs">
-    <div class="alert alert-primary" role="alert">
-      <button
-        type="button"
-        class="close"
-        data-dismiss="alert"
-        aria-label="Close"
-      >
+    <div
+      class="alert alert-primary"
+      :class="[closeAlert ? 'fade show' : '']"
+      role="alert"
+    >
+      <button type="button" class="close" @click="closeAlertEvent()">
         <span aria-hidden="true">&times;</span>
       </button>
       <h5 class="alert-heading text-center">فیلتر شکن(VPN)شما خاموش است</h5>
@@ -18,8 +17,7 @@
         <button
           type="button"
           class="close btn btn-secondary"
-          data-dismiss="alert"
-          aria-label="Close"
+          @click="closeAlertEvent()"
         >
           <span aria-hidden="true" class="text-center">متوجه شدم</span>
         </button>
@@ -37,6 +35,7 @@
 
     <div
       id="p-youtube"
+      ref="youtubeRef"
       class="container p-songs justify-content-center"
       v-for="you in youtube"
       :key="you.id"
@@ -64,6 +63,7 @@ export default {
   data() {
     return {
       youtube: [],
+      closeAlert: false,
     };
   },
   beforeCreate() {
@@ -75,6 +75,7 @@ export default {
           let youtube = doc.data();
           youtube.id = doc.id;
           this.youtube.push(youtube);
+          console.log(this.youtube);
         });
       })
       .catch((err) => console.log(err));
@@ -82,8 +83,8 @@ export default {
   created() {
     //after Get API if Have Error We show alert for iran
     setTimeout(() => {
-      let youtubeRes = document.getElementById("p-youtube");
-      if (youtubeRes === null) {
+      let youtubeRes = this.$refs.youtubeRef;
+      if (youtubeRes === undefined) {
         //add JQuery  For Alert
         document.querySelector(".alert").style.visibility = "visible";
         document.querySelector(".alert").classList.add("fixed-top");
@@ -93,6 +94,12 @@ export default {
         document.querySelector(".alert").style.visibility = "hidden";
       }
     }, 5000);
+  },
+  methods: {
+    closeAlertEvent() {
+      this.closeAlert = !this.closeAlert;
+      document.querySelector(".alert").style.visibility = "hidden";
+    },
   },
 };
 </script>

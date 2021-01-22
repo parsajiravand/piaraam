@@ -22,7 +22,7 @@
             frameborder="no"
             allow="autoplay"
             :src="sound"
-            alt="piaraam video pedramjiravand youtube composer moving iranian_composer"
+            alt="piaraam"
           ></iframe>
         </span>
       </carousel>
