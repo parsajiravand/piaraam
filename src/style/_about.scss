@@ -1,0 +1,18 @@
+#p-about {
+  margin: 100px auto;
+  .p-about-title {
+    margin-bottom: 50px;
+  }
+  .text {
+    margin-top: 20px;
+  }
+  li {
+    svg{
+      margin-left: -20px;
+    }
+    color: white;
+    list-style: none;
+   padding: 10px;
+   margin-left: 20px;
+  }
+}

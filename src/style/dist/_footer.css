@@ -1,0 +1,59 @@
+#p-footer {
+  margin-top: 100px;
+}
+
+#p-footer .p-nav-social {
+  flex-direction: row;
+  justify-content: center !important;
+  /* Its BootStap Class  */
+}
+
+#p-footer .p-nav-social .nav-link:hover,
+#p-footer .p-nav-social .nav-link:focus {
+  transform: scale(1.7);
+  transition: 0.7s all ease-in-out;
+}
+
+#p-footer .p-nav-social li {
+  margin: 8px;
+}
+
+#p-footer .p-nav-social svg:hover {
+  transition: 0.3s all ease-in-out;
+}
+
+#p-footer .p-nav-social .instagram:hover {
+  color: #d400ff;
+}
+
+#p-footer .p-nav-social .telegram:hover {
+  color: #00aeff;
+}
+
+#p-footer .p-nav-social .facebook:hover {
+  color: #0077ff;
+}
+
+#p-footer .p-nav-social .youtube:hover {
+  color: #ff0000;
+}
+
+#p-footer .p-nav-social .soundcloud:hover {
+  color: #ff9900;
+}
+
+#p-footer .p-nav-social .linkedin:hover {
+  color: #0043fd;
+}
+
+#p-footer .p-gmail {
+  margin: 20px auto;
+}
+
+#p-footer .p-gmail a {
+  transition: 0.7s all ease-in-out;
+}
+
+#p-footer .p-copyright {
+  margin-top: 100px;
+}

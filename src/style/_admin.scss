@@ -1,0 +1,21 @@
+.admin {
+  a {
+    color: white;
+  }
+}
+
+.signOut {
+  cursor: pointer;
+}
+.signOut:hover {
+  transform: scale(1.3);
+  transition: 0.5s all;
+}
+.control {
+  top: 62px;
+  height: 91.8%;
+ 
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+}

@@ -1,0 +1,88 @@
+#p-nav .p-nav {
+  /*  position: fixed;
+    z-index: 1000; */
+}
+
+#p-nav .p-nav li a {
+  transition: 0.2s all ease-in-out;
+}
+
+#p-nav .p-nav .bg-dark {
+  background-color: transparent !important;
+  width: 100%;
+}
+
+#p-nav .p-nav .navbar-logo {
+  width: 150px;
+  height: 140px;
+}
+
+#p-nav .p-nav .navbar-dark .navbar-nav .nav-link:hover,
+#p-nav .p-nav .navbar-dark .navbar-nav .nav-link:focus {
+  color: white !important;
+}
+
+#p-nav .p-nav .p-nav-social {
+  /* Its BootStap Class  */
+}
+
+#p-nav .p-nav .p-nav-social .nav-link:hover,
+#p-nav .p-nav .p-nav-social .nav-link:focus {
+  transform: scale(1.7);
+  transition: 0.5s all ease-in-out;
+}
+
+#p-nav .p-nav .p-nav-social svg:hover {
+  transition: 0.3s all ease-in-out;
+}
+
+#p-nav .p-nav .p-nav-social .instagram:hover {
+  color: #d400ff;
+}
+
+#p-nav .p-nav .p-nav-social .telegram:hover {
+  color: #00aeff;
+}
+
+#p-nav .p-nav .p-nav-social .facebook:hover {
+  color: #0077ff;
+}
+
+#p-nav .p-nav .p-nav-social .youtube:hover {
+  color: #ff0000;
+}
+
+#p-nav .p-nav .p-nav-social .soundcloud:hover {
+  color: #ff9900;
+}
+
+#p-nav .p-nav .p-nav-social .linkedin:hover {
+  color: #0043fd;
+}
+
+@media only screen and (max-width: 991px) {
+  #p-nav .p-nav .navbar-logo {
+    margin-top: 0px;
+    margin-left: -20px;
+  }
+  #p-nav .p-nav .menu-btn {
+    float: right;
+  }
+  #p-nav .p-nav .navbar-collapse {
+    margin-right: 50px;
+  }
+  #p-nav .p-nav .p-nav-social {
+    flex-direction: row;
+    justify-content: center !important;
+  }
+  #p-nav .p-nav .p-nav-social li {
+    margin: 8px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #p-nav .navbar-logo {
+    width: 100px !important;
+    height: 90px !important;
+  }
+}

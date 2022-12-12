@@ -1,0 +1,61 @@
+#p-footer {
+  margin-top: 100px;
+
+  .p-nav-social {
+    flex-direction: row;
+    justify-content: center !important;
+    /* Its BootStap Class  */
+    .nav-link:hover,
+    .nav-link:focus {
+      transform: scale(1.7);
+      transition: 0.7s all ease-in-out;
+    }
+    li {
+      margin: 8px;
+    }
+
+    svg {
+      &:hover {
+        transition: 0.3s all ease-in-out;
+      }
+    }
+    .instagram {
+      &:hover {
+        color: #d400ff;
+      }
+    }
+    .telegram {
+      &:hover {
+        color: #00aeff;
+      }
+    }
+    .facebook {
+      &:hover {
+        color: #0077ff;
+      }
+    }
+    .youtube {
+      &:hover {
+        color: #ff0000;
+      }
+    }
+    .soundcloud {
+      &:hover {
+        color: #ff9900;
+      }
+    }
+    .linkedin {
+      &:hover {
+        color: #0043fd;
+      }
+    }
+  }
+  .p-gmail {
+    a {
+      transition: 0.7s all ease-in-out;
+    }
+  }
+  .p-copyright {
+    margin-top: 100px;
+  }
+}
