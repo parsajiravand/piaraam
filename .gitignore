@@ -2,8 +2,6 @@
 node_modules
 /firebase
 /dist
-admin
-
 
 
 # local env files
